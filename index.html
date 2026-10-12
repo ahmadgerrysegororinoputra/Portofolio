@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Ahmad Gerry | Web Developer & PPLG SMK Wikrama Bogor</title>
+  <meta name="description" content="Portofolio resmi Ahmad Gerry Segoro Rino Putra - Siswa PPLG SMK Wikrama Bogor & Junior Web Developer. Eksplorasi proyek web interaktif, JavaScript, dan teknologi modern.">
+  <meta name="author" content="Ahmad Gerry Segoro Rino Putra">
+  <meta name="keywords" content="Ahmad Gerry, Gerry, Portofolio Gerry, SMK Wikrama Bogor, Web Developer Bogor, PPLG Wikrama, Frontend Developer Indonesia">
+
+  <!-- Open Graph / Meta Sosial -->
+  <meta property="og:title" content="Ahmad Gerry - Portfolio Web Developer">
+  <meta property="og:description" content="Portofolio personal Ahmad Gerry Segoro Rino Putra, Web Developer & Siswa PPLG SMK Wikrama Bogor.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Background Ambient Glow & Grid -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+  <div class="bg-grid-overlay"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#beranda" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Gerry</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Menu Navigasi Desktop -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#beranda" class="nav-link active"><i class="fa-solid fa-house"></i> Beranda</a></li>
+          <li class="nav-item"><a href="#tentang" class="nav-link"><i class="fa-solid fa-user"></i> Tentang</a></li>
+          <li class="nav-item"><a href="#proyek" class="nav-link"><i class="fa-solid fa-laptop-code"></i> Proyek</a></li>
+          <li class="nav-item"><a href="#pengalaman" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Edukasi</a></li>
+          <li class="nav-item"><a href="#kontak" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Kontak</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Nav: Theme Toggle & Mobile Toggle -->
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn" aria-label="Ganti Tema Terang/Gelap" title="Ganti Tema">
+          <i class="fa-solid fa-moon icon-moon"></i>
+          <i class="fa-solid fa-sun icon-sun"></i>
+        </button>
+
+        <a href="#kontak" class="btn btn-primary btn-sm nav-cta">Hubungi Saya</a>
+
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Buka Menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="beranda">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-pulse"></span>
+            <span>Siswa PPLG @ SMK Wikrama Bogor</span>
+          </div>
+
+          <h1 class="hero-title">
+            Halo! Saya <br>
+            <span class="gradient-text hero-name">Ahmad Gerry</span>
+          </h1>
+
+          <div class="typing-wrapper">
+            <span class="typing-static">Saya seorang </span>
+            <span class="typing-text" id="typingText"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-desc">
+            Passionate dalam dunia <strong>Web Development</strong> dan teknologi. Senang merancang antarmuka website yang interaktif, clean, responsif, dan menyukai eksplorasi kecerdasan buatan (AI) serta JavaScript modern.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#proyek" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i> Lihat Proyek
+            </a>
+            <a href="#kontak" class="btn btn-secondary">
+              <i class="fa-solid fa-envelope"></i> Hubungi Saya
+            </a>
+            <a href="#tentang" class="btn btn-outline" id="downloadCvBtn">
+              <i class="fa-solid fa-arrow-down"></i> Profil Singkat
+            </a>
+          </div>
+
+          <!-- Social Media Links -->
+          <div class="hero-socials">
+            <span class="social-label">Temukan saya di:</span>
+            <div class="social-links">
+              <a href="https://github.com/ahmadgerrysegororinoputra" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Gerry">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="mailto:ahmadgerrysegororinoputra@smkwikrama.sch.id" class="social-btn" aria-label="Email Gerry">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="https://instagram.com/ahmdgery" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram Gerry">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/ahmad-gerry-3b6022416/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Gerry">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-card-wrapper">
+            <div class="avatar-card-glow"></div>
+            <div class="avatar-card">
+        <!-- Avatar Foto -->
+<div class="avatar-image-box">
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Lingkaran Background -->
+        <circle 
+            cx="100" 
+            cy="100" 
+            r="95" 
+            fill="#1e1b4b"
+            stroke="rgba(255,255,255,0.15)" 
+            stroke-width="3"
+        />
+
+        <!-- Foto Profil -->
+        <defs>
+            <clipPath id="avatarClip">
+                <circle cx="100" cy="100" r="90"/>
+            </clipPath>
+        </defs>
+
+        <image
+            href=images/gerry.png
+            x="10"
+            y="10"
+            width="180"
+            height="180"
+            preserveAspectRatio="xMidYMid slice"
+            clip-path="url(#avatarClip)"
+        />
+
+    </svg>
+</div>
+
+              <!-- Info Card Bawah Foto -->
+              <div class="avatar-info">
+                <h3>Ahmad Gerry</h3>
+                <p><i class="fa-solid fa-code"></i> PPLG Wikrama Bogor</p>
+                <div class="availability-tag">
+                  <span class="dot-online"></span> Siap Belajar & Berkontribusi
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Tech Badges -->
+            <div class="floating-badge badge-html" title="HTML5 Semantic">
+              <i class="fa-brands fa-html5"></i>
+              <span>HTML</span>
+            </div>
+            <div class="floating-badge badge-css" title="CSS3 Modern & Responsive">
+              <i class="fa-brands fa-css3-alt"></i>
+              <span>CSS</span>
+            </div>
+            <div class="floating-badge badge-js" title="JavaScript ES6+">
+              <i class="fa-brands fa-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="floating-badge badge-git" title="Git Version Control">
+              <i class="fa-brands fa-git-alt"></i>
+              <span>Git & GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="tentang">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-user-astronaut"></i> Mengenal Saya</span>
+          <h2 class="section-title">Tentang <span class="gradient-text">Ahmad Gerry</span></h2>
+          <p class="section-desc">Kombinasi antara rasa ingin tahu yang tinggi, kreativitas, dan dedikasi dalam belajar pemrograman web modern.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-bio-card glass-card">
+            <h3>Halo Semuanya! 👋</h3>
+            <p>
+              Saya adalah <strong>Ahmad Gerry Segoro Rino Putra</strong>, seorang siswa kejuruan di <strong>SMK Wikrama Bogor</strong> pada jurusan <strong>Pengembangan Perangkat Lunak dan GIM (PPLG)</strong>.
+            </p>
+          
+            <p>
+              Saya memiliki semangat belajar yang cepat, disiplin, dan terbiasa bekerja secara mandiri maupun berkolaborasi dalam tim untuk mewujudkan proyek-proyek digital yang bermanfaat.
+            </p>
+
+            <div class="about-personal-info">
+              <div class="info-item">
+                <span class="info-label"><i class="fa-solid fa-school text-primary"></i> Sekolah:</span>
+                <span class="info-value">SMK Wikrama Bogor</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fa-solid fa-laptop-code text-primary"></i> Jurusan:</span>
+                <span class="info-value">PPLG (Rekayasa Perangkat Lunak)</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fa-solid fa-location-dot text-primary"></i> Domisili:</span>
+                <span class="info-value">Bogor, Jawa Barat, Indonesia</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fa-solid fa-envelope text-primary"></i> Email:</span>
+                <span class="info-value email-copy" id="emailCopyBtn" title="Klik untuk salin email">
+                  ahmadgerrysegororinoputra@smkwikrama.sch.id <i class="fa-solid fa-copy"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-stats-column">
+            <!-- Stat 1 -->
+            <div class="stat-card glass-card">
+              <div class="stat-icon-box stat-purple">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="stat-content">
+                <h4 class="stat-number">PPLG</h4>
+                <p class="stat-title">Konsentrasi Keahlian</p>
+                <p class="stat-detail">Software Development & Web Design</p>
+              </div>
+            </div>
+
+            <!-- Stat 3 -->
+            <div class="stat-card glass-card">
+              <div class="stat-icon-box stat-pink">
+                <i class="fa-solid fa-fire"></i>
+              </div>
+              <div class="stat-content">
+                <h4 class="stat-number">100%</h4>
+                <p class="stat-title">Semangat Belajar</p>
+                <p class="stat-detail">Siap beradaptasi dengan stack baru & framework modern</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+        <!-- Tech Badges Cloud -->
+        <div class="tech-cloud glass-card">
+          <h4><i class="fa-solid fa-sparkles"></i> Teknologi yang Dikuasai & Sedang Dipelajari:</h4>
+          <div class="badges-wrap">
+            <span class="badge-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+            <span class="badge-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+            <span class="badge-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="badge-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
+            <span class="badge-tag"><i class="fa-brands fa-github"></i> GitHub</span>
+            <span class="badge-tag"><i class="fa-solid fa-palette"></i> UI Design</span>
+            <span class="badge-tag"><i class="fa-brands fa-laravel"></i> Laravel</span>
+            <span class="badge-tag"><i class="fa-solid fa-database"></i> SQL Fundamental</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="proyek">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-diagram-project"></i> Showcase Hasil Karya</span>
+          <h2 class="section-title">Koleksi <span class="gradient-text">Proyek Unggulan</span></h2>
+          <p class="section-desc">Kumpulan proyek web, study case algoritma, dan eksplorasi teknologi yang telah saya kerjakan.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all">Semua Proyek</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="javascript">JavaScript</button>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          
+          <!-- PROJECT 1: Pahlawan Nusantara -->
+          <article class="project-card glass-card" data-category="web">
+            <div class="project-thumbnail">
+              <div class="thumbnail-banner banner-history">
+                <i class="fa-solid fa-monument"></i>
+                <span class="thumbnail-caption">Pahlawan Nusantara</span>
+              </div>
+              <div class="project-badge">Web Sejarah</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Website Tokoh Pahlawan Nusantara</h3>
+              <p class="project-desc">
+                Portal edukasi sejarah interaktif yang mengisahkan perjuangan Pangeran Diponegoro dan Tuanku Imam Bonjol dengan navigasi sticky, ornamen visual nusantara, dan biografi kronologis.
+              </p>
+              <div class="project-tags">
+                <span>HTML5</span>
+                <span>CSS3 Modern</span>
+                <span>Responsive Design</span>
+                <span>Interactive DOM</span>
+              </div>
+              <div class="project-actions">
+                <a href="../projeksejarah/index.html" class="btn btn-sm btn-primary" target="_blank">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Buka Proyek
+                </a>
+                <a href="https://github.com/ahmadgerrysegororinoputra/projeksejarahGerry" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- PROJECT 3: Study Case Absensi JS -->
+          <article class="project-card glass-card" data-category="javascript">
+            <div class="project-thumbnail">
+              <div class="thumbnail-banner banner-absensi">
+                <i class="fa-solid fa-calendar-check"></i>
+                <span class="thumbnail-caption">Smart Absensi</span>
+              </div>
+              <div class="project-badge">Logic & Algorithm</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Sistem Absensi Sederhana & Waktu</h3>
+              <p class="project-desc">
+                Aplikasi kalkulasi waktu kehadiran interaktif dengan integrasi objek Date JavaScript, format nama dinamis (uppercase/lowercase sanitization), dan pencatatan presensi siswa secara akurat.
+              </p>
+              <div class="project-tags">
+                <span>JavaScript ES6</span>
+                <span>Date Object API</span>
+                <span>String Manipulation</span>
+                <span>Logika Algoritma</span>
+              </div>
+              <div class="project-actions">
+                <a href="../studycase absensi ganjil/index.html" class="btn btn-sm btn-primary" target="_blank">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Buka Demo
+                </a>
+                <button class="btn btn-sm btn-outline info-modal-trigger" data-title="Sistem Absensi JS" data-desc="Study case logika pemrograman fundamental untuk memvalidasi input nama siswa dan mencetak stempel waktu kehadiran otomatis.">
+                  <i class="fa-solid fa-circle-info"></i> Detail
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Interactive Personal Portfolio -->
+          <article class="project-card glass-card" data-category="web">
+            <div class="project-thumbnail">
+              <div class="thumbnail-banner banner-portfolio">
+                <i class="fa-solid fa-laptop-code"></i>
+                <span class="thumbnail-caption">Modern Portfolio</span>
+              </div>
+              <div class="project-badge">Current Project</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Personal Interactive Portfolio Web</h3>
+              <p class="project-desc">
+                Website portofolio berdesain modern dengan glassmorphism UI, Dark/Light mode switcher dengan persistensi localStorage, filter dinamis proyek, dan form kontak interaktif.
+              </p>
+              <div class="project-tags">
+                <span>HTML5 Semantic</span>
+                <span>CSS3 Variables</span>
+                <span>Vanilla JS</span>
+                <span>LocalStorage</span>
+              </div>
+              <div class="project-actions">
+                <a href="#beranda" class="btn btn-sm btn-primary">
+                  <i class="fa-solid fa-rotate"></i> Lihat Halaman Ini
+                </a>
+                <a href="https://github.com/ahmadgerrysegororinoputra" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> GitHub Profile
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & TIMELINE SECTION -->
+    <section class="section timeline-section" id="pengalaman">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-road"></i> Rekam Jejak</span>
+          <h2 class="section-title"> <span class="gradient-text">Perjalanan Belajar</span></h2>
+          <p class="section-desc">Langkah demi langkah dalam mengasah kemampuan teknologi dan pengembangan web.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-time">2024 - Sekarang</div>
+              <h3 class="timeline-title">SD PAJAJARAN</h3>
+             
+          
+              <div class="timeline-tags">
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-time">2025 - 2026</div>
+              <h3 class="timeline-title">SMPN 1 Bogor</h3>
+            </p>
+              <div class="timeline-tags">
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-time">2026</div>
+              <h3 class="timeline-title">SMKS WIKRAMA BOGOR</h3>
+            
+              <div class="timeline-tags">
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="kontak">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-headset"></i> Terhubung Bersama</span>
+          <h2 class="section-title">Mari Berdiskusi & <span class="gradient-text">Bekerja Sama</span></h2>
+          <p class="section-desc">Punya pertanyaan, tawaran magang, proyek web, atau ingin berkolaborasi? Jangan ragu untuk menghubungi saya!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info Kontak -->
+          <div class="contact-info-card glass-card">
+            <h3>Informasi Kontak</h3>
+            <p>Saya selalu terbuka untuk berdiskusi seputar peluang baru, proyek seru, maupun saran dan masukan.</p>
+
+            <div class="contact-channels">
+              <a href="mailto:ahmadgerrysegororinoputra@smkwikrama.sch.id" class="channel-item">
+                <div class="channel-icon icon-email">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-name">Email Sekolah</span>
+                  <span class="channel-value">ahmadgerrysegororinoputra@smkwikrama.sch.id</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/ahmadgerrysegororinoputra" target="_blank" rel="noopener noreferrer" class="channel-item">
+                <div class="channel-icon icon-github">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-name">GitHub</span>
+                  <span class="channel-value">github.com/ahmadgerrysegororinoputra</span>
+                </div>
+              </a>
+
+              <div class="channel-item">
+                <div class="channel-icon icon-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-name">Lokasi</span>
+                  <span class="channel-value">Bogor, Jawa Barat, Indonesia</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- WhatsApp Direct Quick Button -->
+            <div class="quick-contact-box">
+              <h4>Kirim Pesan WhatsApp Langsung:</h4>
+              <p>Klik tombol di bawah untuk membuka obrolan langsung di WhatsApp:</p>
+              <a href="https://wa.me/6283807108331?text=Halo%20Gerry,%20saya%20melihat%20portofolio%20kamu%20dan%20tertarik%20untuk%20berdiskusi" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="whatsappLink">
+                <i class="fa-brands fa-whatsapp"></i> Chat via WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Form Kontak Interaktif -->
+          <div class="contact-form-card glass-card">
+            <h3>Kirimkan Pesan Langsung</h3>
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="senderName"><i class="fa-solid fa-user"></i> Nama Lengkap</label>
+                <input type="text" id="senderName" class="form-input" placeholder="Masukkan nama Anda..." required>
+                <span class="form-error" id="nameError">Nama wajib diisi</span>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail"><i class="fa-solid fa-envelope"></i> Alamat Email</label>
+                <input type="email" id="senderEmail" class="form-input" placeholder="contoh@domain.com" required>
+                <span class="form-error" id="emailError">Email valid wajib diisi</span>
+              </div>
+
+              <div class="form-group">
+                <label for="senderSubject"><i class="fa-solid fa-tag"></i> Topik / Keperluan</label>
+                <input type="text" id="senderSubject" class="form-input" placeholder="Misal: Peluang Magang, Kolaborasi Proyek..." required>
+                <span class="form-error" id="subjectError">Subjek wajib diisi</span>
+              </div>
+
+              <div class="form-group">
+                <label for="senderMessage"><i class="fa-solid fa-comment-dots"></i> Pesan Anda</label>
+                <textarea id="senderMessage" class="form-input form-textarea" rows="4" placeholder="Tuliskan pesan atau ide Anda di sini..." required></textarea>
+                <span class="form-error" id="messageError">Pesan tidak boleh kosong</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                <i class="fa-solid fa-paper-plane"></i> Kirim Pesan Sekarang
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#beranda" class="footer-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-name">Gerry</span>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+        <p>Ahmad Gerry Segoro Rino Putra </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#proyek">Proyek</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 <strong>Ahmad Gerry Segoro Rino Putra</strong></p>
+        <button id="backToTop" class="back-to-top" title="Kembali ke atas" aria-label="Kembali ke atas">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- MODAL DETAIL PROYEK -->
+  <div class="modal-overlay" id="infoModal">
+    <div class="modal-box glass-card">
+      <button class="modal-close" id="modalCloseBtn">&times;</button>
+      <div class="modal-header">
+        <h3 id="modalTitle">Detail Proyek</h3>
+      </div>
+      <div class="modal-body">
+        <p id="modalDesc"></p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary btn-sm" id="modalOkBtn">Mengerti</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
